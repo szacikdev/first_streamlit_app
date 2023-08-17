@@ -13,7 +13,8 @@ streamlit.text('🥑🍞 Avocado toast')
 streamlit.title('Build your own smoothie')
 # Let's put a pick list here so they can pick the fruit they want to include 
 fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.Fruit),['Avocado', 'Strawberries'])
-fruits_to_show = my_fruit_list.loc[fruits_selected]
+fruits_to_show = my_fruit_list 
+#.loc[fruits_selected]
 # Display the table on the page.
 
 
